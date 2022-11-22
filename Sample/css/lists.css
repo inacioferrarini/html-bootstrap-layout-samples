@@ -1,0 +1,9 @@
+fieldset.searchBox {
+    background-color: #d4d4d4;
+    border: 1px solid darkgray !important;
+}
+
+.toolColumn {
+    width: 1px;
+    white-space: nowrap;
+}
