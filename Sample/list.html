@@ -59,6 +59,17 @@
 	<div class="container">
 		<h1 class="mt-3 mb-3">List</h1>
 
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<i class="bi-check-circle-fill"></i>
+			<strong>Success.</strong> Success message here.
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+		<div class="alert alert-danger alert-dismissible fade show" role="alert">
+			<i class="bi-exclamation-triangle-fill"></i>
+			<strong>Error.</strong> Failure message here.
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+
 		<fieldset class="searchBox border p-2 rounded">
 			<legend class="w-auto">Search</legend>
 			<form>
@@ -72,17 +83,24 @@
 			</form>
 		</fieldset>
 
-		<div class="row mb-3 mt-3 g-3 d-flex align-items-center justify-content-start">
-			<div class="col-auto align-items-center">
-				<label for="recordsPerPage">Records Per Page</label>
-			</div>
-			<div class="col-sm-1 align-items-center">
-				<select class="form-select" name="recordsPerPage">
-					<option selected value="5">5</option>
-					<option value="10">10</option>
-					<option value="15">15</option>
-					<option value="20">20</option>
-				</select>
+		<div>
+			<div class="p-3 d-flex justify-content-between">
+				<div class="row">
+					<div class="col-auto p-1">
+						<label class="align-items-center align-middle" for="recordsPerPage">Show</label>
+					</div>
+					<div class="col-auto p-0">
+						<select class="form-select" name="recordsPerPage">
+							<option selected value="5">5</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+							<option value="20">20</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<a class="btn btn-primary rounded" href="#"><i class="bi bi-plus-circle-fill"></i>&nbsp;New</a>
+				</div>
 			</div>
 		</div>
 
